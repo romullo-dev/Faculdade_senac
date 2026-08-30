@@ -14,6 +14,3 @@ else:
         print("Analise manual, em breve entraremos em contato.")
     else:
         print("Empréstimo não permitido. O valor solicitado excede o limite permitido.")
-
-        
-    #print(f"Limite de empréstimo permitido: R${limite:.2f}")
