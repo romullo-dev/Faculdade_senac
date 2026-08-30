@@ -87,7 +87,7 @@ function calcular() {
                 } else if (preco >= 50 || clientevip) {
                     desconto = 0.10;
                     precofinal = preco - (preco * desconto);
-                    alert("Seu pedido recebeu desconto, 10%");
+                    alert("Seu pedido recebeu desconto, 10%");  
                 } else {
                     desconto = 0;
                     precofinal = preco;
