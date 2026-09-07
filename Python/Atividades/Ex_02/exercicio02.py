@@ -9,3 +9,4 @@ elif media < 7:
     print("O aluno está em recuperação com a média: ", media)
 else:
     print("O aluno está aprovado com a média: ", media)
+
