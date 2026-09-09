@@ -12,15 +12,17 @@ while resp != 4:
         case 1:
             print(f"Saldo: R$ {valor:.2f}")
         case 2:
+            valor_deposito = float(input("Digite o valor a ser depositado: "))
             if valor_deposito <= 0:
                 print("Não é possível realizar depósitos. Valor inválido.")
             else:
-                valor_deposito = float(input("Digite o valor a ser depositado: "))
                 valor += valor_deposito
                 print(f"Depósito de R$ {valor_deposito:.2f} realizado com sucesso!")
         case 3:
             valor_saque = float(input("Digite o valor a ser sacado: "))
-            if valor_saque <= valor:
+            if valor_saque <= 0:
+                print("Não é possível realizar saques. Valor inválido.")
+            elif valor_saque <= valor:
                 valor -= valor_saque
                 print(f"Saque de R$ {valor_saque:.2f} realizado com sucesso!")
             else:
