@@ -1,3 +1,6 @@
-for i in range(5):
-    print(i)
-    resposta = input("Digite o nome de uma fruta: ")
+compras = ['arroz','feijão']
+compras.append('cafe')
+compras.insert(1, 'macarrão')
+compras.remove('cafe')
+compras.pop(1)
+print(compras)
