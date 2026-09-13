@@ -36,14 +36,19 @@ switch (regiao_entrega) {
 }
 
 if (cumpom_informado == "ads10" && valor_compra >= 100 ) {
-    desconto_pix = (valor_compra * 0.10)
+    desconto_pix = (valor_compra * 0.10);
 }
 
 if (forma_pagamento == "pix") {
-    desconto_cupom = (valor_compra * 0.05)
+    desconto_cupom = (valor_compra * 0.05);
 }
 
-valor_total = 
+valor_total = (valor_compra + valor_frete) - (desconto_pix + desconto_cupom);
+
+alert("O valor original de produtos é " + valor_compra);
+alert("O valor de desconto para cupom é " + desconto_cupom);
+alert("O valor do desconto no Pix é "+ desconto_pix);
+alert("Valor Total " + valor_total);
 
 
 
