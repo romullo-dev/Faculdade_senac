@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exercício 4 — Lista de participantes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Exercício 4 — Lista de participantes</h1>
+
+		<label for="nome">Nome do participante</label>
+		<input id="nome" type="text">
+
+		<div>
+			<button id="adicionar" type="button">Adicionar participante</button>
+		</div>
+
+		<p id="mensagem" aria-live="polite"></p>
+		<p class="resumo" aria-live="polite">Participantes: <span id="contador">0</span></p>
+		<ul id="lista"></ul>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

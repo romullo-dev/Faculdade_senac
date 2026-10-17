@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exercício 8 — Painel de atendimento</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Exercício 8 — Painel de atendimento</h1>
+
+		<label for="nome">Nome do paciente</label>
+		<input id="nome" type="text">
+
+		<label for="idade">Idade</label>
+		<input id="idade" type="number" min="1" step="1">
+
+		<label for="tipo">Tipo de atendimento</label>
+		<select id="tipo">
+			<option value="">Selecione</option>
+			<option value="Normal">Normal</option>
+			<option value="Prioritário">Prioritário</option>
+		</select>
+
+		<div>
+			<button id="adicionar" type="button">Cadastrar paciente</button>
+		</div>
+
+		<p id="mensagem" aria-live="polite"></p>
+		<ul id="lista"></ul>
+		<div id="resumo" class="resumo" aria-live="polite"></div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

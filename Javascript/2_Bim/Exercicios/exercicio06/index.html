@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exercício 6 — Cadastro de tarefas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Exercício 6 — Cadastro de tarefas</h1>
+
+		<label for="descricao">Descrição</label>
+		<input id="descricao" type="text">
+
+		<label for="responsavel">Responsável</label>
+		<input id="responsavel" type="text">
+
+		<label for="prioridade">Prioridade</label>
+		<select id="prioridade">
+			<option value="">Selecione</option>
+			<option value="Baixa">Baixa</option>
+			<option value="Média">Média</option>
+			<option value="Alta">Alta</option>
+		</select>
+
+		<div>
+			<button id="adicionar" type="button">Cadastrar tarefa</button>
+		</div>
+
+		<p id="mensagem" aria-live="polite"></p>
+		<ul id="lista"></ul>
+		<div class="resumo" id="resumo" aria-live="polite">Tarefas: 0 | Alta prioridade: 0</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

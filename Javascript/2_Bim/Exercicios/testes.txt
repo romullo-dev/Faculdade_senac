@@ -1,0 +1,107 @@
+REGISTRO DE TESTES — LISTA DOM
+ATENÇÃO: casos de teste preparados; execute no Google Chrome e preencha o resultado apresentado.
+Não foram declarados como executados em navegador.
+
+EXERCÍCIO 1
+Teste válido — Dados: Nome: Ana
+Resultado esperado: Olá, Ana! Boas-vindas ao sistema.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Nome vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Mensagem de erro
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 2
+Teste válido — Dados: Caderno; 25,50; 3
+Resultado esperado: Total R$ 76,50
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Produto vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Preço zero ou quantidade 1,5 rejeitados
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 3
+Teste válido — Dados: Ana; notas 8 e 6
+Resultado esperado: Média 7,00; Aprovado
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Nome vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Nota 11 rejeitada
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 4
+Teste válido — Dados: Ana
+Resultado esperado: Participantes: 1
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Nome vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Ana duplicada rejeitada
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 5
+Teste válido — Dados: Teclado; 120; 2
+Resultado esperado: Unidades: 2; total R$ 240,00
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Nome vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Quantidade 0 rejeitada
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 6
+Teste válido — Dados: Atualizar site; Mariana; Alta
+Resultado esperado: Tarefas: 1; Alta: 1
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Descrição vazia
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Prioridade não selecionada rejeitada
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 7
+Teste válido — Dados: Suco; 8; 2
+Resultado esperado: Total R$ 16,00; limpar deixa pedido vazio
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Nome vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Preço negativo rejeitado
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO
+
+EXERCÍCIO 8
+Teste válido — Dados: Ana; 65; Normal
+Resultado esperado: Prioritário automático; remover zera contadores
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: nenhuma registrada; verificar após execução.
+Teste campo vazio — Dados: Nome vazio
+Resultado esperado: mensagem de erro na página, sem cadastro/cálculo.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Teste inválido — Dados: Idade 0 rejeitada
+Resultado esperado: operação recusada com mensagem na página.
+Resultado apresentado: A PREENCHER APÓS EXECUÇÃO NO CHROME
+Correção realizada: A PREENCHER SE NECESSÁRIO

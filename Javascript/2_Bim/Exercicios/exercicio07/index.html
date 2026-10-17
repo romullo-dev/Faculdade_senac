@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exercício 7 — Pedido de lanchonete</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Exercício 7 — Pedido de lanchonete</h1>
+
+		<label for="nome">Item</label>
+		<input id="nome" type="text">
+
+		<label for="preco">Preço</label>
+		<input id="preco" type="number" min="0.01" step="0.01">
+
+		<label for="quantidade">Quantidade</label>
+		<input id="quantidade" type="number" min="1" step="1">
+
+		<div>
+			<button id="adicionar" type="button">Adicionar ao pedido</button>
+			<button id="limpar" type="button">Limpar pedido</button>
+		</div>
+
+		<p id="mensagem" aria-live="polite"></p>
+		<ul id="lista"></ul>
+		<div id="resumo" class="resumo" aria-live="polite"></div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exercício 5 — Controle de estoque</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Exercício 5 — Controle de estoque</h1>
+
+		<label for="nome">Produto</label>
+		<input id="nome" type="text">
+
+		<label for="preco">Preço</label>
+		<input id="preco" type="number" min="0.01" step="0.01">
+
+		<label for="quantidade">Quantidade</label>
+		<input id="quantidade" type="number" min="1" step="1">
+
+		<div>
+			<button id="adicionar" type="button">Cadastrar produto</button>
+		</div>
+
+		<p id="mensagem" aria-live="polite"></p>
+		<ul id="lista"></ul>
+		<div class="resumo" id="resumo" aria-live="polite">Produtos diferentes: 0 | Unidades: 0 | Valor: R$ 0,00</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

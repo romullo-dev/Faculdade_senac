@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: #f3f6fb;
+	color: #182638;
+	margin: 0;
+	padding: 35px;
+}
+
+main {
+	max-width: 720px;
+	margin: auto;
+	background: white;
+	padding: 30px;
+	border-radius: 14px;
+	box-shadow: 0 5px 25px #142c4815;
+}
+
+h1 {
+	font-size: 26px;
+	color: #174c85;
+}
+
+label {
+	display: block;
+	margin: 15px 0 5px;
+	font-weight: bold;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 11px;
+	border: 1px solid #bac7d7;
+	border-radius: 7px;
+	font-size: 16px;
+}
+
+button {
+	background: #1766a6;
+	color: white;
+	border: 0;
+	border-radius: 7px;
+	padding: 11px 17px;
+	margin: 14px 8px 8px 0;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #104c80;
+}
+
+button.remover {
+	background: #b52c37;
+	padding: 6px 10px;
+}
+
+ul {
+	padding-left: 22px;
+}
+
+li {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.sucesso,
+.aprovado {
+	color: #147444;
+}
+
+.erro,
+.reprovado {
+	color: #b52c37;
+}
+
+.recuperacao,
+.media {
+	color: #b47600;
+}
+
+.alta,
+.prioritario {
+	color: #b52c37;
+	font-weight: bold;
+}
+
+.baixa {
+	color: #147444;
+}
+
+.resumo {
+	padding: 12px;
+	background: #edf4fa;
+	border-radius: 8px;
+	margin-top: 12px;
+}
+
+#mensagem {
+	min-height: 20px;
+}

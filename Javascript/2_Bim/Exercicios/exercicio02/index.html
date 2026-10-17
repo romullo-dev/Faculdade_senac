@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Exercício 2 — Calculadora de compra</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Exercício 2 — Calculadora de compra</h1>
+
+		<label for="produto">Produto</label>
+		<input id="produto" type="text">
+
+		<label for="preco">Preço unitário</label>
+		<input id="preco" type="number" min="0.01" step="0.01">
+
+		<label for="quantidade">Quantidade</label>
+		<input id="quantidade" type="number" min="1" step="1">
+
+		<div>
+			<button id="calcular" type="button">Calcular compra</button>
+		</div>
+
+		<p id="mensagem" aria-live="polite"></p>
+		<div id="resultado" class="resumo" aria-live="polite"></div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
