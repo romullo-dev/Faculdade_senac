@@ -1,0 +1,559 @@
+REGISTRO DE TESTES - LISTA DOM
+Aluno: Rômulo França
+
+==================================================
+Exercício 1 - Mensagem de boas-vindas
+==================================================
+
+Teste 1 - Dados válidos
+
+Dados utilizados:
+Nome: "   Ana   " (com espaços antes e depois)
+
+Resultado esperado:
+Olá, Ana! Boas-vindas ao sistema. (classe sucesso, sem os espaços)
+
+Resultado apresentado:
+Olá, Ana! Boas-vindas ao sistema. (classe sucesso)
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Campo vazio
+
+Dados utilizados:
+Nome: "   " (apenas espaços)
+
+Resultado esperado:
+Mensagem de erro na página (classe erro)
+
+Resultado apresentado:
+Erro: informe o seu nome. (classe erro)
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 2 - Calculadora de compra
+==================================================
+
+Teste 1 - Dados válidos
+
+Dados utilizados:
+Produto: Caderno
+Preço: 25.50
+Quantidade: 3
+
+Resultado esperado:
+Produto: Caderno / Preço unitário: R$ 25.50 / Quantidade: 3 / Total de R$ 76.50
+
+Resultado apresentado:
+Produto: Caderno / Preço unitário: R$ 25.50 / Quantidade: 3 / Total da compra: R$ 76.50
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Campo vazio
+
+Dados utilizados:
+Produto: (vazio)
+Preço: 25.50
+Quantidade: 3
+
+Resultado esperado:
+Mensagem de erro e nenhum cálculo
+
+Resultado apresentado:
+Erro: preencha todos os campos.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Preço inválido
+
+Dados utilizados:
+Produto: Caneta
+Preço: 0
+Quantidade: 2
+
+Resultado esperado:
+Mensagem de erro sobre o preço
+
+Resultado apresentado:
+Erro: o preço deve ser maior que zero.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 4 - Quantidade inválida
+
+Dados utilizados:
+Produto: Caneta
+Preço: 2
+Quantidade: 1.5 (e também -1)
+
+Resultado esperado:
+Mensagem de erro sobre a quantidade
+
+Resultado apresentado:
+Erro: a quantidade deve ser um número inteiro maior que zero. (nos dois casos)
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 3 - Situação acadêmica
+==================================================
+
+Teste 1 - Dados válidos (Aprovado)
+
+Dados utilizados:
+Estudante: Ana
+Nota 1: 8
+Nota 2: 7.5
+
+Resultado esperado:
+Média 7.75 - Aprovado (classe aprovado)
+
+Resultado apresentado:
+Estudante: Ana / Média: 7.75 / Situação: Aprovado (classe aprovado)
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Dados válidos (Recuperação)
+
+Dados utilizados:
+Estudante: Bruno
+Nota 1: 6
+Nota 2: 5
+
+Resultado esperado:
+Média 5.50 - Recuperação (classe recuperacao)
+
+Resultado apresentado:
+Estudante: Bruno / Média: 5.50 / Situação: Recuperação (classe recuperacao)
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Dados válidos (Reprovado)
+
+Dados utilizados:
+Estudante: Carla
+Nota 1: 3
+Nota 2: 4.5
+
+Resultado esperado:
+Média 3.75 - Reprovado (classe reprovado)
+
+Resultado apresentado:
+Estudante: Carla / Média: 3.75 / Situação: Reprovado (classe reprovado)
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 4 - Limite da aprovação
+
+Dados utilizados:
+Estudante: Diego
+Nota 1: 7
+Nota 2: 7
+
+Resultado esperado:
+Média 7.00 - Aprovado
+
+Resultado apresentado:
+Estudante: Diego / Média: 7.00 / Situação: Aprovado
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 5 - Campo vazio
+
+Dados utilizados:
+Estudante: (vazio)
+Nota 1: 8
+Nota 2: 7
+
+Resultado esperado:
+Mensagem de erro
+
+Resultado apresentado:
+Erro: preencha todos os campos.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 6 - Nota inválida
+
+Dados utilizados:
+Estudante: Ana
+Nota 1: 11 (e também -1)
+Nota 2: 7
+
+Resultado esperado:
+Mensagem de erro sobre o intervalo das notas
+
+Resultado apresentado:
+Erro: as notas devem estar entre 0 e 10. (nos dois casos)
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 4 - Lista de participantes
+==================================================
+
+Teste 1 - Dados válidos
+
+Dados utilizados:
+Participante: Ana
+Participante: Bruno
+
+Resultado esperado:
+Dois itens na lista, contador igual a 2, campo limpo e cursor no campo de nome
+
+Resultado apresentado:
+Lista: Ana, Bruno / Contador: 2 / Campo limpo / Cursor no campo de nome
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Campo vazio
+
+Dados utilizados:
+Participante: (vazio)
+
+Resultado esperado:
+Mensagem de erro e contador sem alteração
+
+Resultado apresentado:
+Erro: informe o nome do participante. / Contador: 2
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Nome duplicado
+
+Dados utilizados:
+Participante: ana (minúsculo)
+Participante: "  Bruno " (com espaços)
+
+Resultado esperado:
+Mensagem de erro de duplicidade nos dois casos
+
+Resultado apresentado:
+Erro: ana já está na lista. / Erro: Bruno já está na lista. / Contador: 2
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 5 - Controle de estoque
+==================================================
+
+Teste 1 - Dados válidos
+
+Dados utilizados:
+Produto 1: Teclado / Preço: 120 / Quantidade: 2
+Produto 2: Mouse / Preço: 45.90 / Quantidade: 3
+
+Resultado esperado:
+Teclado - subtotal R$ 240.00
+Mouse - subtotal R$ 137.70
+Produtos diferentes: 2 / Total de unidades: 5 / Valor total do estoque: R$ 377.70
+
+Resultado apresentado:
+Teclado | Preço: R$ 120.00 | Quantidade: 2 | Subtotal: R$ 240.00
+Mouse | Preço: R$ 45.90 | Quantidade: 3 | Subtotal: R$ 137.70
+Produtos diferentes: 2 / Total de unidades: 5 / Valor total do estoque: R$ 377.70
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Campo vazio
+
+Dados utilizados:
+Produto: (vazio) / Preço: 10 / Quantidade: 1
+
+Resultado esperado:
+Mensagem de erro e resumo sem alteração
+
+Resultado apresentado:
+Erro: preencha todos os campos.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Preço inválido
+
+Dados utilizados:
+Produto: Monitor / Preço: -5 / Quantidade: 1
+
+Resultado esperado:
+Mensagem de erro sobre o preço
+
+Resultado apresentado:
+Erro: o preço deve ser maior que zero.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 4 - Quantidade inválida
+
+Dados utilizados:
+Produto: Monitor / Preço: 800 / Quantidade: 0
+
+Resultado esperado:
+Mensagem de erro sobre a quantidade
+
+Resultado apresentado:
+Erro: a quantidade deve ser um número inteiro maior que zero.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 5 - Produto repetido
+
+Dados utilizados:
+Produto: teclado / Preço: 100 / Quantidade: 1
+
+Resultado esperado:
+Mensagem de erro, para manter correta a contagem de produtos diferentes
+
+Resultado apresentado:
+Erro: o produto teclado já está cadastrado.
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 6 - Cadastro de tarefas
+==================================================
+
+Teste 1 - Dados válidos
+
+Dados utilizados:
+Tarefa 1: Atualizar a página / Mariana / Alta
+Tarefa 2: Revisar textos / Carlos / Baixa
+Tarefa 3: Testar formulário / Paula / Média
+
+Resultado esperado:
+Três tarefas na lista, cada uma com a classe da sua prioridade
+Total de tarefas: 3 / Prioridade alta: 1 / Formulário limpo após cada cadastro
+
+Resultado apresentado:
+Atualizar a página | Responsável: Mariana | Prioridade: Alta (classe prioridade-alta)
+Revisar textos | Responsável: Carlos | Prioridade: Baixa (classe prioridade-baixa)
+Testar formulário | Responsável: Paula | Prioridade: Média (classe prioridade-media)
+Total de tarefas: 3 / Tarefas com prioridade alta: 1 / Campos limpos
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Campo vazio
+
+Dados utilizados:
+Descrição: (vazio) / Responsável: Paula / Prioridade: Alta
+
+Resultado esperado:
+Mensagem de erro e tarefa não cadastrada
+
+Resultado apresentado:
+Erro: preencha a descrição e o responsável.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Prioridade não selecionada
+
+Dados utilizados:
+Descrição: Publicar site / Responsável: Paula / Prioridade: (não selecionada)
+
+Resultado esperado:
+Mensagem de erro pedindo a prioridade
+
+Resultado apresentado:
+Erro: selecione a prioridade da tarefa.
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 7 - Pedido de lanchonete
+==================================================
+
+Teste 1 - Pedido vazio ao abrir a página
+
+Dados utilizados:
+Nenhum item. Clique em "Limpar pedido".
+
+Resultado esperado:
+Mensagem de pedido vazio na lista e erro ao tentar limpar
+
+Resultado apresentado:
+Lista: O pedido está vazio.
+Erro: não há itens no pedido para limpar.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Dados válidos
+
+Dados utilizados:
+Item 1: X-Salada / Preço: 18.90 / Quantidade: 2
+Item 2: Refrigerante / Preço: 6.50 / Quantidade: 3
+
+Resultado esperado:
+X-Salada - subtotal R$ 37.80
+Refrigerante - subtotal R$ 19.50
+Total de unidades: 5 / Valor total do pedido: R$ 57.30
+
+Resultado apresentado:
+X-Salada | Preço: R$ 18.90 | Quantidade: 2 | Subtotal: R$ 37.80
+Refrigerante | Preço: R$ 6.50 | Quantidade: 3 | Subtotal: R$ 19.50
+Total de unidades: 5 / Valor total do pedido: R$ 57.30
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Campo vazio
+
+Dados utilizados:
+Item: (vazio) / Preço: 5 / Quantidade: 1
+
+Resultado esperado:
+Mensagem de erro
+
+Resultado apresentado:
+Erro: preencha todos os campos.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 4 - Valores inválidos
+
+Dados utilizados:
+Batata / Preço: 0 / Quantidade: 1
+Batata / Preço: 12 / Quantidade: 0
+
+Resultado esperado:
+Mensagem de erro para o preço e para a quantidade
+
+Resultado apresentado:
+Erro: o preço deve ser maior que zero.
+Erro: a quantidade deve ser um número inteiro maior que zero.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 5 - Limpar pedido com itens
+
+Dados utilizados:
+Pedido com X-Salada e Refrigerante. Clique em "Limpar pedido".
+
+Resultado esperado:
+Itens removidos do array e da página, totais zerados e mensagem de pedido vazio
+
+Resultado apresentado:
+Pedido limpo com sucesso. / Total de unidades: 0 / Valor total do pedido: R$ 0.00
+Lista: O pedido está vazio.
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Exercício 8 - Painel de atendimento
+==================================================
+
+Teste 1 - Fila vazia ao abrir a página
+
+Dados utilizados:
+Nenhum paciente.
+
+Resultado esperado:
+Mensagem de fila vazia
+
+Resultado apresentado:
+A fila de atendimento está vazia.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 2 - Dados válidos
+
+Dados utilizados:
+João Silva / 35 anos / Normal
+Maria Souza / 72 anos / Normal (selecionado)
+Pedro Lima / 28 anos / Prioritário
+
+Resultado esperado:
+Maria classificada automaticamente como prioritária por ter 60 anos ou mais
+Total de pacientes: 3 / Atendimentos prioritários: 2
+
+Resultado apresentado:
+João Silva | 35 anos | Normal
+Maria Souza | 72 anos | Prioritário
+Pedro Lima | 28 anos | Prioritário
+Mensagem: Maria Souza cadastrado(a) como prioritário(a) por ter 60 anos ou mais.
+Total de pacientes: 3 / Atendimentos prioritários: 2
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 3 - Campo vazio
+
+Dados utilizados:
+Nome: (vazio) / Idade: 40
+Nome: Lucas / Idade: (vazio)
+
+Resultado esperado:
+Mensagem de erro nos dois casos
+
+Resultado apresentado:
+Erro: informe o nome do paciente.
+Erro: a idade deve ser um número inteiro maior que zero.
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 4 - Idade inválida
+
+Dados utilizados:
+Lucas / Idade: 0
+Lucas / Idade: 20.5
+
+Resultado esperado:
+Mensagem de erro sobre a idade
+
+Resultado apresentado:
+Erro: a idade deve ser um número inteiro maior que zero. (nos dois casos)
+
+Situação:
+Teste concluído com sucesso.
+
+Teste 5 - Remover pacientes
+
+Dados utilizados:
+Clique em "Remover" de Maria Souza, depois de João Silva e de Pedro Lima.
+
+Resultado esperado:
+Paciente retirado do array e da página, contadores atualizados e,
+ao final, mensagem de fila vazia
+
+Resultado apresentado:
+Após remover Maria: Total de pacientes: 2 / Atendimentos prioritários: 1
+Após remover todos: Total de pacientes: 0 / Atendimentos prioritários: 0
+Lista: A fila de atendimento está vazia.
+
+Situação:
+Teste concluído com sucesso.
+
+==================================================
+Observações gerais
+==================================================
+
+- Nenhum erro foi exibido no console durante os testes.
+- Nenhuma correção foi necessária após a execução dos testes.
+- Em nenhum exercício foram usados prompt(), alert(), document.write() ou onclick no HTML.

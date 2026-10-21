@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Controle de estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Controle de estoque</h1>
+
+        <label for="nome">Nome do produto</label>
+        <input type="text" id="nome" placeholder="Ex.: Teclado">
+
+        <label for="preco">Preço (R$)</label>
+        <input type="number" id="preco" step="0.01" placeholder="Ex.: 120.00">
+
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" step="1" placeholder="Ex.: 2">
+
+        <button type="button" id="botao-cadastrar">Cadastrar produto</button>
+
+        <p id="mensagem"></p>
+
+        <div class="resumo">
+            <p>Produtos diferentes: <strong id="total-produtos">0</strong></p>
+            <p>Total de unidades: <strong id="total-unidades">0</strong></p>
+            <p>Valor total do estoque: <strong id="valor-estoque">R$ 0.00</strong></p>
+        </div>
+
+        <ul id="lista-produtos" class="lista"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6 - Cadastro de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de tarefas</h1>
+
+        <label for="descricao">Descrição da tarefa</label>
+        <input type="text" id="descricao" placeholder="Ex.: Atualizar a página">
+
+        <label for="responsavel">Responsável</label>
+        <input type="text" id="responsavel" placeholder="Ex.: Mariana">
+
+        <label for="prioridade">Prioridade</label>
+        <select id="prioridade">
+            <option value="">Selecione a prioridade</option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+        </select>
+
+        <button type="button" id="botao-cadastrar">Cadastrar tarefa</button>
+
+        <p id="mensagem"></p>
+
+        <div class="resumo">
+            <p>Total de tarefas: <strong id="total-tarefas">0</strong></p>
+            <p>Tarefas com prioridade alta: <strong id="total-alta">0</strong></p>
+        </div>
+
+        <ul id="lista-tarefas" class="lista"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
