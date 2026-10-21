@@ -1,4 +1,5 @@
 import numpy as np
+
 dados_cpu = [
     [42, 55, 61, 78, 84, 73, 68, 59],
     [35, 40, 38, 45, 50, 48, 44, 41],
@@ -26,10 +27,11 @@ def resumo_geral(matriz):
     maior = np.max(matriz)
     desvio = np.std(matriz)
 
-    print("Média: ", round(media, 2))
-    print("Menor medição: ", round(menor, 2))
-    print("Maior medição: ", round(maior, 2))
-    print("Desvio padrão:", round(desvio, 2))
+    print(f"Média: {media:.2f}")
+    print(f"Menor medição: {menor}")
+    print(f"Maior medição: {maior}")
+    print(f"Desvio padrão: {desvio:.2f}")
 
     return media, menor, maior, desvio
+
 resumo_geral(matriz)

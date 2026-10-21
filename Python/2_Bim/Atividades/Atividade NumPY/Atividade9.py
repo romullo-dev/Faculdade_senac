@@ -19,6 +19,15 @@ servidores = [
 matriz = np.array(dados_cpu)
 
 # Parte 9: Simulação de melhoria
+def classificar_media(media):
+    if media < 60:
+        return "Normal"
+    elif media < 75:
+        return "Atenção"
+    else:
+        return "Crítico"
+
+
 def simular_otimizacao(m, lim, servs):
     print("=== PARTE 9: SIMULAÇÃO DE MELHORIA ===")
 
@@ -64,3 +73,6 @@ def simular_otimizacao(m, lim, servs):
         reducao_media,
         criticos_depois
     )
+
+limite = float(input("Informe o limite crítico: "))
+simular_otimizacao(matriz, limite, servidores)

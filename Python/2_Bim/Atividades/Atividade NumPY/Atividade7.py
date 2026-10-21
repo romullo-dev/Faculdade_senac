@@ -17,18 +17,28 @@ servidores = [
 ]
 
 matriz = np.array(dados_cpu)
-#Parte 7: Classificação
-def classificar_servidores(dados, nomes):
-    medias = np.mean(dados, axis=1)
-    
-    print("--- Relatório de Classificação dos Servidores ---")
-    for nome, media in zip(nomes, medias):
-        if media < 60:
-            classificacao = "Normal"
-        elif 60 <= media < 75:
-            classificacao = "Atenção"
-        else:
-            classificacao = "Crítico"
-            
-        print(f"{nome} (Média: {media:.2f}): {classificacao}")
-classificar_servidores(dados_cpu, servidores)
+
+# Parte 7: Classificação
+def classificar_media(media):
+    if media < 60:
+        return "Normal"
+    elif media < 75:
+        return "Atenção"
+    else:
+        return "Crítico"
+
+
+def classificar_servidores(matriz, servidores):
+    print("=== PARTE 7: CLASSIFICAÇÃO ===")
+
+    medias = np.mean(matriz, axis=1)
+    classificacoes = []
+
+    for i in range(len(servidores)):
+        classificacao = classificar_media(medias[i])
+        classificacoes.append(classificacao)
+        print(f"{servidores[i]} (Média: {medias[i]:.2f}): {classificacao}")
+
+    return classificacoes
+
+classificar_servidores(matriz, servidores)

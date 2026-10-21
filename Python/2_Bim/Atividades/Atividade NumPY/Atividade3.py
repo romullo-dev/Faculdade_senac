@@ -1,4 +1,5 @@
 import numpy as np
+
 dados_cpu = [
     [42, 55, 61, 78, 84, 73, 68, 59],
     [35, 40, 38, 45, 50, 48, 44, 41],
@@ -28,10 +29,12 @@ def analisar_servidores(matriz, servidores):
 
     for i in range(len(servidores)):
         print(servidores[i])
-        print("Média: ", round(medias [i], 2))
-        print("Menor uso: ", round(menores[1], 2))
-        print("Maior uso: ", round(maiores[1], 2))
-        print("Desvio padrão: ", round(desvios[1], 2))
+        print(f"Média: {medias[i]:.2f}")
+        print(f"Menor uso: {menores[i]}")
+        print(f"Maior uso: {maiores[i]}")
+        print(f"Desvio padrão: {desvios[i]:.2f}")
         print("-" * 20)
+
     return medias
+
 analisar_servidores(matriz, servidores)

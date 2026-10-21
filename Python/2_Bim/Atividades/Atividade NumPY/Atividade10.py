@@ -19,6 +19,40 @@ servidores = [
 matriz = np.array(dados_cpu)
 
 # Parte 10: Relatório final
+def classificar_media(media):
+    if media < 60:
+        return "Normal"
+    elif media < 75:
+        return "Atenção"
+    else:
+        return "Crítico"
+
+
+def simular_otimizacao(m, lim, servs):
+    matriz_otimizada = m * 0.88
+
+    media_antes = np.mean(m)
+    media_depois = np.mean(matriz_otimizada)
+    alertas_antes = np.sum(m >= lim)
+    alertas_depois = np.sum(matriz_otimizada >= lim)
+    reducao_media = media_antes - media_depois
+
+    medias_otimizadas = np.mean(matriz_otimizada, axis=1)
+    criticos_depois = []
+    for i in range(len(servs)):
+        if classificar_media(medias_otimizadas[i]) == "Crítico":
+            criticos_depois.append(servs[i])
+
+    return (
+        media_antes,
+        media_depois,
+        alertas_antes,
+        alertas_depois,
+        reducao_media,
+        criticos_depois
+    )
+
+
 def gerar_relatorio(m, lim, servs, medias, classificacoes,
                     pos_maior, resultado_melhoria):
 
@@ -67,4 +101,48 @@ def gerar_relatorio(m, lim, servs, medias, classificacoes,
         print("Nenhum servidor.")
 
     print()
-gerar_relatorio()
+
+
+limite = float(input("Informe o limite crítico: "))
+
+medias = np.mean(matriz, axis=1)
+
+classificacoes = []
+for i in range(len(servidores)):
+    classificacoes.append(classificar_media(medias[i]))
+
+maior_media = medias[0]
+posicao_maior = 0
+for i in range(1, len(medias)):
+    if medias[i] > maior_media:
+        maior_media = medias[i]
+        posicao_maior = i
+
+resultado_melhoria = simular_otimizacao(matriz, limite, servidores)
+
+gerar_relatorio(matriz, limite, servidores, medias, classificacoes,
+                posicao_maior, resultado_melhoria)
+
+# DESAFIO DE INTERPRETAÇÃO (valores obtidos executando o programa com limite 80)
+#
+# 1) Qual servidor exige maior atenção?
+#    O Servidor E.
+#
+# 2) Qual resultado numérico justifica essa conclusão?
+#    Ele tem a maior média (86.38), a maior medição da matriz (95) e o maior
+#    número de alertas (7 de 8 medições acima do limite 80).
+#
+# 3) O limite informado alterou a quantidade de servidores em alerta?
+#    Sim. Com limite 80, apenas A, C e E têm alertas (B e D ficam sem).
+#    Com limite 90, só C e E têm alertas; com limite 50, todos menos o B.
+#    Quanto menor o limite, mais servidores entram em alerta.
+#
+# 4) A redução de 12% eliminou todos os problemas?
+#    Não. A média geral caiu de 68.03 para 59.86 e os alertas caíram de 13 para 3,
+#    mas o Servidor E continua Crítico (média 76.01) e C e E ainda têm medições
+#    acima de 80.
+#
+# 5) Uma média aceitável garante que o servidor nunca apresentou valor crítico?
+#    Não. O Servidor A tem média 65.00 (Atenção, não Crítico), mas registrou um
+#    pico de 84, que gerou 1 alerta com limite 80. A média esconde os picos;
+#    por isso é preciso olhar também o maior valor e a matriz booleana.

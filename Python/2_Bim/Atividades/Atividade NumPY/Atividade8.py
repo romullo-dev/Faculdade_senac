@@ -37,3 +37,21 @@ def servidor_maior_media_func(medias, servs, cont_alertas, classificacoes):
     print()
 
     return posicao_maior
+
+def classificar_media(media):
+    if media < 60:
+        return "Normal"
+    elif media < 75:
+        return "Atenção"
+    else:
+        return "Crítico"
+
+
+limite = float(input("Informe o limite crítico: "))
+medias = np.mean(matriz, axis=1)
+cont_alertas = np.sum(matriz >= limite, axis=1)
+classificacoes = []
+for i in range(len(servidores)):
+    classificacoes.append(classificar_media(medias[i]))
+
+servidor_maior_media_func(medias, servidores, cont_alertas, classificacoes)

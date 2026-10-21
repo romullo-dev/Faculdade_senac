@@ -19,15 +19,21 @@ servidores = [
 matriz = np.array(dados_cpu)
 
 # Parte 5: Identificação de alertas
-servidores = ["Servidor A", "Servidor B", "Servidor C", "Servidor D", "Servidor E"]
-limite = float(input("Informe o limite critico: "))
-def identificar_alertas (matriz, limite):
-    alerta = matriz >= limite
-    print("Matriz boleana de alertas")
-    print(alerta)
-    medicoes_criticas = matriz[alerta]
-    print("Medições que atingiram ou ultrapassaram o limite: ")
+def identificar_alertas(matriz, limite):
+    print("=== PARTE 5: IDENTIFICAÇÃO DE ALERTAS ===")
+
+    alertas = matriz >= limite
+    print("Matriz booleana de alertas:")
+    print(alertas)
+
+    medicoes_criticas = matriz[alertas]
+    print("Medições que atingiram ou ultrapassaram o limite:")
     print(medicoes_criticas)
-    total_atertas = np.sum(alerta)
-    print("Quantidade total de alertas: ", total_atertas)
+
+    total_alertas = np.sum(alertas)
+    print("Quantidade total de alertas:", total_alertas)
+
+    return alertas
+
+limite = float(input("Informe o limite crítico: "))
 identificar_alertas(matriz, limite)
