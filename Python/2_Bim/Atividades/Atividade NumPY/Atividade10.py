@@ -134,7 +134,7 @@ gerar_relatorio(matriz, limite, servidores, medias, classificacoes,
 #
 # 3) O limite informado alterou a quantidade de servidores em alerta?
 #    Sim. Com limite 80, apenas A, C e E têm alertas (B e D ficam sem).
-#    Com limite 90, só C e E têm alertas; com limite 50, todos menos o B.
+#    Com limite 90, só C e E têm alertas; com limite 60, todos menos o B.
 #    Quanto menor o limite, mais servidores entram em alerta.
 #
 # 4) A redução de 12% eliminou todos os problemas?

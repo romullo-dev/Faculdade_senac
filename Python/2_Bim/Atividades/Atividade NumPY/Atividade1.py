@@ -28,8 +28,7 @@ def exibir_estrutura(matriz):
     print("Quantidade de bytes por elemento:", matriz.itemsize)
     print("Quantidade total de bytes ocupada:", matriz.nbytes)
 
-    print("
-=== Explicação do formato ===")
+    print("\n=== Explicação do formato ===")
     print(f"O formato {matriz.shape} indica {matriz.shape[0]} linhas (servidores) "
           f"e {matriz.shape[1]} colunas (horários de medição).")
     print(f"Ao todo são {matriz.size} medições, cada uma ocupando {matriz.itemsize} "
