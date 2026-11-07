@@ -1,0 +1,9 @@
+data,produto,categoria,quantidade,preco_unitario,vendedor,cidade,faturamento
+2026-09-01,Mouse,Periféricos,10,80.0,Ana,Brasília,800.0
+2026-09-01,Monitor,Monitores,3,900.0,Caio,Taguatinga,2700.0
+2026-09-02,Teclado,Periféricos,5,150.0,Bruno,Ceilândia,750.0
+2026-09-03,Webcam,Periféricos,8,200.0,Ana,Brasília,1600.0
+2026-09-04,Notebook,Computadores,2,3500.0,Caio,Taguatinga,7000.0
+2026-09-05,Mouse,Periféricos,15,80.0,Bruno,Ceilândia,1200.0
+2026-09-06,Monitor,Monitores,4,900.0,Ana,Brasília,3600.0
+2026-09-07,Teclado,Periféricos,12,150.0,Caio,Taguatinga,1800.0
