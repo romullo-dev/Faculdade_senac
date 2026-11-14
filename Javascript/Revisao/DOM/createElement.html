@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="tarefa" type="text">
+    <button id="adicionar">Adicionar</button>
+    <ul id="lista"></ul>
+
+    <script>
+        const tarefas = document.getElementById("tarefa");
+        const botao = document.getElementById("adicionar");
+        const lista = document.getElementById("lista");
+
+        function adicionarTarefa() {
+            const texto = tarefas.value.trim();
+
+            if (texto === "") {
+                return;
+            }
+
+            const item = document.createElement("li");
+
+            item.textContent = texto;
+
+            lista.appendChild(item);
+            tarefas.focus();
+        }
+
+        botao.addEventListener("click", adicionarTarefa)
+
+    </script>
+    
+</body>
+</html>

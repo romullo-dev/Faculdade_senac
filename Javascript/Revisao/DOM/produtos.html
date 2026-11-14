@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de produtos</h1>
+    
+    <input type="text" id="nomeProduto" placeholder="nome produto">
+    <input type="number" id="precoProduto" placeholder="preco">
+    <button type="button" id="cadastrar">cadastrar</button>
+
+    <p id="mensagem"></p>
+
+    <h2>Produtos Cadastrado</h2>
+    <ul id="listaProduto"></ul>
+
+    <p id="resumo">Nenhum registro</p>
+
+    <script>
+        const produtos = []
+
+        const nomeProduto = document.getElementById("nomeProduto");
+        const precoProduto = document.getElementById("precoProduto");
+        const cadastrar = document.getElementById("cadastrar");
+        const mensagem = document.getElementById("mensagem");
+        const listaProdutos = document.getElementById("listaProdutos");
+        const resumo = document.getElementById("resumo");
+
+        
+    </script>
+</body>
+</html>
