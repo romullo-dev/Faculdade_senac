@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero1" type="number">
+    <input id="numero2" type="number">
+    
+    <button id="somar">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        const numero1 = document.getElementById("numero1");
+        const numero2 = document.getElementById("numero2");
+        const botao = document.getElementById("somar");
+        const resultado = document.getElementById("resultado")
+
+        function calcular() {
+            if (numero1.value == "" || numero2.value ==="") {
+                resultado.textContent = "Preencha os dois numeros";
+                return;
+            }
+
+            const valor1 = Number(numero1.value);
+            const valor2 = Number(numero2.value);
+
+            const soma = valor1 + valor2;
+
+            resultado.textContent = "Resultado : " + soma
+        }
+
+        botao.addEventListener("click", calcular)
+    </script>
+</body>
+</html>

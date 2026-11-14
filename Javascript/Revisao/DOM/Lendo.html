@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text">
+    <button id="saudar">Saudar</button>
+    <p id="resultado"></p>
+
+    <script>
+        const name = document.getElementById("name");
+        const saudar = document.getElementById("saudar");
+        const resultado = document.getElementById("resultado");
+ 
+        function mostrarMensagem() {
+            const texto = name.value;
+
+            resultado.textContent = "Ola, " + texto
+        }
+
+        saudar.addEventListener("click", mostrarMensagem)
+    </script>
+    
+</body>
+</html>

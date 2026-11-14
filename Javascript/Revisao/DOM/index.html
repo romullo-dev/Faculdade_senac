@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <button id="botao">clique aqui</button>
+    <button id="botao2">Apagar</button>
+
+    <p id="mensagem"></p>
+    <script>
+        const botao = document.getElementById("botao");
+        const botao2 = document.getElementById("botao2");
+
+        const mensagem = document.getElementById("mensagem")
+
+        function mostrarMensagem() {
+            mensagem.textContent = "Voce clicou no botão!";
+        }
+        function apagarMensagem() {
+            mensagem.textContent = "";
+        }
+
+        botao.addEventListener("click", mostrarMensagem);
+        botao2.addEventListener("click", apagarMensagem);
+
+    </script>
+    
+</body>
+</html>
